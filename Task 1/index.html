@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+
+<style>
+    /* CSS Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('Image/Gym.jpg');
+        height: 1000px;
+        color: white;
+        font-family: 'Spartan', sans-serif;
+    }
+
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 50px;
+        top: 24px;
+    }
+
+    .left img {
+        width: 100px;
+        height: 55px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 27px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 9px;
+        top: 27px;
+        display: inline-block;
+    }
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        /* text-decoration: underline; */
+        border: 1px solid white;
+        background-color: rgb(180, 197, 197);
+        border-radius: 25px;
+        padding: 12px;
+        margin: 6px;
+        color: black;
+        text-align: center;
+    }
+
+    .left div {
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+
+    .btn {
+        margin: 6px;
+        padding: 9px;
+        color: white;
+        background-color: rgba(145, 143, 143, 0.308);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        border: 2px solid whitesmoke;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        order: 1px solid white;
+        background-color: rgb(180, 197, 197);
+        border-radius: 25px;
+        margin: 5px;
+        padding: 10px;
+        color: black;
+        text-align: center;
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 110px auto;
+        padding: 75px;
+        width: 45%;
+        border-radius: 20px;
+    }
+
+    .form-group input {
+        margin: 8px auto;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        border: 2px solid transparent;
+        border-radius: 20px;
+        background-color: azure;
+        font-size: 12px;
+        font-family: 'Spartan', sans-serif;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+        margin: 5px;
+        width: 102%;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- logo -->
+        <div class="left">
+            <img src="Image/logo.jpg" alt="">
+            <div>Fitness Pro</div>
+
+            <div></div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Box -->
+        <div class="right">
+
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+
+        <h1>Join the Best Gym Now</h1>
+
+        <form action="noaction.php">
+
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter Your Name ">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter Your Age ">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter Your Gender ">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter Your Locality ">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter Your Number ">
+            </div>
+
+            <button class="btn">Submit</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
